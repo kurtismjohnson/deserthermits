@@ -245,10 +245,30 @@ main {
   margin-bottom: 0;
 }
 
+/* ── Mobile toggle button (hidden on desktop) ── */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lora', serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: #111110;
+  padding: 0;
+}
+
+.nav-toggle:hover {
+  color: #3E5C4A;
+}
+
 /* ── Responsive ── */
 @media (max-width: 600px) {
   header {
     padding: 16px 16px 0;
+    align-items: flex-start;
   }
 
   .logo img {
@@ -264,7 +284,7 @@ main {
   }
 
   .home-intro {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .about-section {
@@ -276,22 +296,60 @@ main {
   }
 
   .about-text {
-    font-size: 1rem;
+    font-size: 0.92rem;
   }
 
   .story-item a {
     font-size: 1rem;
   }
 
+  .contact-layout {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .contact-photo {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .contact-links {
+    flex: none;
+  }
+
   .contact-links a {
-    font-size: 1rem;
+    font-size: 0.92rem;
   }
 
   .page-title {
     font-size: 1.4rem;
   }
 
-  .nav-dropdown {
-    top: calc(100% + 8px);
+  .story-photo {
+    max-width: 100%;
+  }
+
+  /* ── Mobile nav ── */
+  .nav-toggle {
+    display: block;
+    margin-top: 8px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    text-align: right;
+    margin-top: 16px;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
