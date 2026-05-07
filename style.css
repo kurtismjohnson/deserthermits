@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Work+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2ece5;
+  font-family: 'Lora', serif;
+  color: #111110;
+  min-height: 100vh;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.logo img {
+  border-radius: 0;
+}
+
+/* ── Header ── */
+header {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 200px;
+  width: auto;
+  display: block;
+}
+
+.logo a:hover {
+  opacity: 0.7;
+}
+
+nav {
+  position: relative;
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lora', serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #111110;
+  padding: 0;
+}
+
+.nav-toggle:hover {
+  color: #3E5C4A;
+}
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  list-style: none;
+  background-color: #f2ece5;
+  text-align: right;
+  z-index: 100;
+}
+
+.nav-dropdown.open {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-dropdown a {
+  text-decoration: none;
+  color: #111110;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.nav-dropdown a:hover,
+.nav-dropdown a.active {
+  color: #3E5C4A;
+}
+
+/* ── Main content ── */
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 72px 24px 80px;
+  text-align: center;
+}
+
+/* ── Home ── */
+.home-photo {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  display: block;
+  margin: 0 auto 32px;
+}
+
+.home-intro {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.97rem;
+  line-height: 1.8;
+}
+
+/* ── About ── */
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  text-align: left;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.about-text {
+  font-size: 0.92rem;
+  line-height: 1.9;
+  text-align: left;
+}
+
+.about-text p + p {
+  margin-top: 1.2em;
+}
+
+/* ── Stories ── */
+.stories-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+
+.story-item {
+  padding-bottom: 20px;
+}
+
+.story-item a {
+  font-size: 1.15rem;
+  color: #111110;
+  text-decoration: underline;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.story-item a:hover {
+  color: #3E5C4A;
+}
+
+.story-tagline {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #111110;
+}
+
+.story-meta {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* ── Contact ── */
+.contact-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+.contact-photo {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+  flex: 0 0 280px;
+}
+
+
+.contact-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+  text-align: left;
+  flex: 0 0 280px;
+}
+
+.contact-links a {
+  font-size: 0.92rem;
+  color: #111110;
+  text-decoration: none;
+  font-weight: 400;
+  border-bottom: 1px solid #111110;
+  padding-bottom: 2px;
+}
+
+.contact-links a:hover {
+  color: #3E5C4A;
+  border-bottom-color: #3E5C4A;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+/* ── Story pages ── */
+.story-photo {
+  display: block;
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  margin: 0 auto 40px;
+}
+
+
+.story-body {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.story-title {
+  font-size: 0.92rem;
+  font-weight: 400;
+  text-decoration: underline;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 2rem;
+}
+
+.story-body p {
+  font-size: 0.92rem;
+  line-height: 1.9;
+  text-align: justify;
+  text-indent: 2.5em;
+  margin-bottom: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  header {
+    padding: 16px 16px 0;
+  }
+
+  .logo img {
+    height: 120px;
+  }
+
+  main {
+    padding: 32px 16px 60px;
+  }
+
+  .home-photo {
+    max-width: 100%;
+  }
+
+  .home-intro {
+    font-size: 1rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-photo {
+    max-width: 100%;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .story-item a {
+    font-size: 1rem;
+  }
+
+  .contact-links a {
+    font-size: 1rem;
+  }
+
+  .page-title {
+    font-size: 1.4rem;
+  }
+
+  .nav-dropdown {
+    top: calc(100% + 8px);
+  }
+}
