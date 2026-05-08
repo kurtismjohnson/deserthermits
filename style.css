@@ -231,6 +231,7 @@ main {
   text-transform: none;
   letter-spacing: normal;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .story-body p {
