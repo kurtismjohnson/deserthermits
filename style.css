@@ -169,7 +169,7 @@ main {
 
 .contact-photo {
   width: 100%;
-  max-width: 280px;
+  max-width: 400px;
   height: auto;
   display: block;
   flex: 0 0 280px;
