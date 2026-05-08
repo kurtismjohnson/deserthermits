@@ -14,10 +14,6 @@ body {
 }
 
 img {
-  border-radius: 8px;
-}
-
-.logo img {
   border-radius: 0;
 }
 
