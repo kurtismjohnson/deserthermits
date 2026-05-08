@@ -265,7 +265,7 @@ main {
 }
 
 /* ── Responsive ── */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   header {
     padding: 16px 16px 0;
     align-items: flex-start;
