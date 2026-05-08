@@ -241,6 +241,21 @@ main {
   margin-bottom: 0;
 }
 
+/* ── Footer ── */
+footer {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #888;
+}
+
 /* ── Mobile toggle button (hidden on desktop) ── */
 .nav-toggle {
   display: none;
