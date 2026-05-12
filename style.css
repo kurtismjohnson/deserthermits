@@ -254,6 +254,86 @@ main {
   letter-spacing: 0.1em;
 }
 
+/* ── Dictionary tooltips ── */
+.tooltip-word {
+  position: relative;
+  cursor: default;
+}
+
+.tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  background: #ede7df;
+  border: 1px solid #c4b8aa;
+  padding: 18px 20px;
+  font-family: 'Lora', serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  color: #111110;
+  z-index: 100;
+  pointer-events: none;
+  white-space: normal;
+}
+
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #c4b8aa;
+}
+
+.tooltip-content::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #ede7df;
+  z-index: 1;
+  margin-top: -1px;
+}
+
+.tooltip-word:hover .tooltip-content {
+  display: block;
+}
+
+.dict-headword {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.dict-pron {
+  font-style: italic;
+  color: #555;
+}
+
+.dict-etym {
+  color: #666;
+}
+
+.dict-def {
+  display: block;
+  margin-top: 0.6em;
+}
+
+.dict-note {
+  display: block;
+  margin-top: 0.6em;
+  padding-left: 0.8em;
+}
+
 /* ── Footer ── */
 footer {
   max-width: 860px;
