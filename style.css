@@ -242,6 +242,18 @@ main {
   margin-bottom: 0;
 }
 
+.story-body p.no-indent {
+  text-indent: 0;
+}
+
+.section-number {
+  font-size: 0.92rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 2rem 0 1rem;
+  letter-spacing: 0.1em;
+}
+
 /* ── Footer ── */
 footer {
   max-width: 860px;
