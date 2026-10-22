@@ -400,10 +400,9 @@ footer {
 @media (max-width: 768px) {
   header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-    padding: 24px 16px 0;
+    padding: 16px 16px 0;
     flex-wrap: wrap;
     gap: 0;
   }
@@ -412,16 +411,13 @@ footer {
     display: block;
     position: static;
     order: 2;
-    flex: 0 0 100%;
-    text-align: center;
-    margin-top: 10px;
   }
 
   .nav-link {
     display: none;
     order: 3;
     flex: 0 0 100%;
-    text-align: center;
+    text-align: right;
     padding: 14px 0;
     padding-right: 0 !important;
     padding-left: 0 !important;
