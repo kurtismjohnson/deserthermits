@@ -417,14 +417,18 @@ footer {
     display: none;
     order: 3;
     flex: 0 0 100%;
-    text-align: right;
-    padding: 14px 0;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+    text-align: right !important;
+    padding: 14px 0 !important;
   }
 
   header.nav-open .nav-link {
     display: block;
+  }
+
+  header.nav-open .nav-link:first-child {
+    margin-top: 12px;
+    border-top: 1px solid #d9d2cb;
+    padding-top: 16px !important;
   }
 
   .logo-link {
@@ -432,7 +436,7 @@ footer {
   }
 
   .logo-link img {
-    height: 80px;
+    height: 90px;
   }
 
   main {
