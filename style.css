@@ -65,7 +65,7 @@ header {
   padding-right: 130px;
 }
 
-.nav-link:last-child {
+.nav-link:nth-child(3) {
   text-align: left;
   padding-left: 130px;
 }
