@@ -410,14 +410,19 @@ footer {
 
   .nav-toggle {
     display: block;
+    position: static;
+    order: 2;
+    flex: 0 0 100%;
+    text-align: center;
+    margin-top: 10px;
   }
 
   .nav-link {
     display: none;
-    order: 10;
+    order: 3;
     flex: 0 0 100%;
     text-align: center;
-    padding: 16px 0;
+    padding: 14px 0;
     padding-right: 0 !important;
     padding-left: 0 !important;
   }
