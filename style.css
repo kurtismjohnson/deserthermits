@@ -39,7 +39,7 @@ header {
 }
 
 .logo-link img {
-  height: 120px;
+  height: 114px;
   width: auto;
   display: block;
 }
@@ -275,6 +275,11 @@ main {
 .tooltip-word {
   position: relative;
   cursor: default;
+  transition: color 0.15s ease;
+}
+
+.tooltip-word:hover {
+  color: #3E5C4A;
 }
 
 .tooltip-content {
